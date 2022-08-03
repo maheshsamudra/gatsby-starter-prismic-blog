@@ -15,16 +15,22 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@prismicio/react": "^2.4.4",
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
+    "gatsby-plugin-prismic-previews": "^5.2.8",
     "gatsby-plugin-sass": "^5.20.0",
     "gatsby-plugin-sharp": "^4.20.0",
     "gatsby-plugin-sitemap": "^5.20.0",
     "gatsby-source-filesystem": "^4.20.0",
+    "gatsby-source-prismic": "^5.2.9",
     "gatsby-transformer-sharp": "^4.20.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "sass": "^1.54.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }
