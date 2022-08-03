@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-starter-prismic-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gatsby-starter-prismic-blog",
+  "author": "Mahesh",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.20.0",
+    "gatsby-plugin-image": "^2.20.0",
+    "gatsby-plugin-manifest": "^4.20.0",
+    "gatsby-plugin-sass": "^5.20.0",
+    "gatsby-plugin-sharp": "^4.20.0",
+    "gatsby-plugin-sitemap": "^5.20.0",
+    "gatsby-source-filesystem": "^4.20.0",
+    "gatsby-transformer-sharp": "^4.20.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.54.1"
+  }
+}
