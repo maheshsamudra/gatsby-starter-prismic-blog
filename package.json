@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "gatsby-starter-prismic-blog",
-  "author": "Mahesh",
+  "author": "Mahesh Samudra <maheshsamudra@gmail.com>",
   "keywords": [
     "gatsby"
   ],
+  "license": "0BSD",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
