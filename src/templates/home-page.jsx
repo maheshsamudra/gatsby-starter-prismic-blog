@@ -7,8 +7,6 @@ import Seo from "../components/seo";
 import Bio from "../components/bio";
 
 const HomePageTemplate = ({ data, location }) => {
-  // const siteTitle = site.siteMetadata?.title || `Title`;
-
   const {
     title,
     description,
@@ -16,8 +14,6 @@ const HomePageTemplate = ({ data, location }) => {
   } = data?.prismicHomePage?.data || {};
 
   const blogList = data?.allPrismicPost?.nodes || [];
-
-  console.log(blogList);
 
   return (
     <Layout location={location} title={title.text}>

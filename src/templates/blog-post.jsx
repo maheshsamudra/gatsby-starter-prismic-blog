@@ -4,10 +4,14 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
+import Bio from "../components/bio";
 
 const BlogPostTemplate = ({ data, location }) => {
   const { previous, next, site, prismicPost: post } = data;
   const siteTitle = site.siteMetadata?.title || `Title`;
+
+  const { description, user_image: userImage } =
+    data?.prismicHomePage?.data || {};
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -25,9 +29,9 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        {/*<footer>*/}
-        {/*  <Bio />*/}
-        {/*</footer>*/}
+        <footer>
+          <Bio image={userImage} description={description.richText} />
+        </footer>
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -60,13 +64,8 @@ const BlogPostTemplate = ({ data, location }) => {
 };
 
 export const Head = ({ data }) => {
-  return null;
-  // return (
-  //   <Seo
-  //     title={post.frontmatter.title}
-  //     description={post.frontmatter.description || post.excerpt}
-  //   />
-  // );
+  const { title, excerpt } = data?.prismicPost?.data || {};
+  return <Seo title={title.text} description={excerpt} />;
 };
 
 export default withPrismicPreview(BlogPostTemplate);
@@ -88,6 +87,7 @@ export const blogPostQuery = graphql`
       uid
       data {
         post_date
+        excerpt
         title {
           html
           text
@@ -111,6 +111,22 @@ export const blogPostQuery = graphql`
       url
       data {
         title {
+          text
+        }
+      }
+    }
+    prismicHomePage {
+      data {
+        title {
+          richText
+          text
+        }
+        user_image {
+          url
+          alt
+        }
+        description {
+          richText
           text
         }
       }
