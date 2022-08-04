@@ -7,7 +7,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Prismic Blog`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://gatsbystarterprismicblog.gatsbyjs.io/`,
     social: {
       twitter: "MaheshSamudra",
     },
