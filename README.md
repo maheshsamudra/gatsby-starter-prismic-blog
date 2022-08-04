@@ -42,3 +42,31 @@ Kick off your project with this blog boilerplate. This starter ships with the ma
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+## What's included?
+
+```sh
+├── README.md
+├── gatsby-config.js
+├── gatsby-node.js
+├── src
+│   ├── components
+│   ├── pages
+│   ├── colors.css.ts
+│   ├── styles.css.ts
+│   └── theme.css.ts
+└── .env.EXAMPLE
+```
+
+1. **`gatsby-config.js`**: [Gatsby config][] file that includes plugins required for this starter.
+2. **`gatsby-node.js`**: [Gatsby Node][] config file that creates an abstract data model for the homepage content.
+3. **`src/`**: The source directory for the starter, including templates, components, and more.
+
+
+## Getting Started:
+
+1. Create a repository in [Prismic](https://prismic.io/)
+2. Create two custom types - home_page and post. Use the JSON schema on `/config/prismic/schema` to create the fields.
+3. Add content to the home_page and add some posts.
+4. Update the .env file. The API keys can be obtained from Prismic Repo's Settings -> API & Security section.
+5. That's it. You can start the project: `npm run develop`
