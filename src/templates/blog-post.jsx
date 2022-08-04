@@ -8,7 +8,7 @@ import Bio from "../components/bio";
 
 const BlogPostTemplate = ({ data, location }) => {
   const { previous, next, site, prismicPost: post } = data;
-  const siteTitle = site.siteMetadata?.title || `Title`;
+  const siteTitle = site.siteMetadata?.title || `Welcome`;
 
   const { description, user_image: userImage } =
     data?.prismicHomePage?.data || {};
@@ -25,7 +25,9 @@ const BlogPostTemplate = ({ data, location }) => {
           <p>{post.data.post_date}</p>
         </header>
         <section
-          dangerouslySetInnerHTML={{ __html: post.data.post_body.html }}
+          dangerouslySetInnerHTML={{
+            __html: post?.data?.post_body?.html || [],
+          }}
           itemProp="articleBody"
         />
         <hr />
@@ -124,6 +126,7 @@ export const blogPostQuery = graphql`
         user_image {
           url
           alt
+          gatsbyImageData(width: 50, height: 50, placeholder: BLURRED)
         }
         description {
           richText

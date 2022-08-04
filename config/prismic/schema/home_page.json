@@ -1,0 +1,30 @@
+{
+  "Main" : {
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Title"
+      }
+    },
+    "user_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 150,
+          "height" : 150
+        },
+        "thumbnails" : [ ],
+        "label" : "User Image"
+      }
+    },
+    "description" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,strong,hyperlink,list-item",
+        "allowTargetBlank" : true,
+        "label" : "Description"
+      }
+    }
+  }
+}
