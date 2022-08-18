@@ -66,7 +66,17 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 ## Getting Started:
 
 1. Create a repository in [Prismic](https://prismic.io/)
-2. Create two custom types - home_page and post. Use the JSON schema on `/config/prismic/schema` to create the fields.
-3. Add content to the home_page and add some posts.
-4. Update the .env file. The API keys can be obtained from Prismic Repo's Settings -> API & Security section.
-5. That's it. You can start the project: `npm run develop`
+2. Create two custom types: "home_page" (Single type) and post (Repeatable type).
+3. When creating the "home_page" custom type, Select "Single Type" and type in "Home Page" as the name, and it will set the API ID to be "home_page".
+4. When creating the "post" custom type, select "Repeatable Type" and type in "Post" as the name, and it will set the API ID to be "post".
+5. Make sure that the API matches exactly.
+6. Use the JSON schema on `/config/prismic/schema` to create the fields.
+7. Add content to the home_page and add some posts. You can use the content and images on `/congif/prismic/content` to get started.
+8. Add the API keys to the .env file. The API keys can be obtained from Prismic Repo's Settings → API & Security section.
+   - GATSBY_PRISMIC_REPO_NAME=your-repo-name
+     - You can grab this from the URL of your Prismic Dashboard. If your URL is https://gatsby-starter-prismic-blog.prismic.io, the repo name is "gatsby-starter-prismic-blog" (without the quotes)
+   - PRISMIC_ACCESS_TOKEN=your-access-token
+     - You can generate your Access Token from Settings → API & Security section. Under "Generate an Access Token" section, add a name and click "Add this application". Then it will display the access token under "Permanent access tokens".
+   - PRISMIC_CUSTOM_TYPES_API_TOKEN=your-custom-types-api-token
+     - You can generate your Custom Types API Token from Settings → API & Security section → Custom Types API. Under "Generate a new token" section, type in a name and click on "Add a token".
+9. That's it. You can start the project: `npm run develop`

@@ -8,7 +8,7 @@ const Bio = ({ image, description }) => {
       <GatsbyImage
         image={getImage(image)}
         className={"bio-avatar"}
-        alt={image.alt}
+        alt={image.alt || "User"}
         height={50}
         width={50}
       />
