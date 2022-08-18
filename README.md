@@ -72,7 +72,7 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 4. When creating the "post" custom type, select "Repeatable Type" and type in "Post" as the name, and it will set the API ID to be "post".
 5. Make sure that the API matches exactly.
 6. Use the JSON schema on `/config/prismic/schema` to create the fields.
-7. Add content to the home_page and add some posts. You can use the content and images on `/congif/prismic/content` to get started.
+7. Add content to the home_page and add some posts. You can use the content and images on `/config/prismic/content` to get started.
 8. Add the API keys to the .env file. The API keys can be obtained from Prismic Repo's Settings → API & Security section.
    - GATSBY_PRISMIC_REPO_NAME=your-repo-name
      - You can grab this from the URL of your Prismic Dashboard. If your URL is https://gatsby-starter-prismic-blog.prismic.io, the repo name is "gatsby-starter-prismic-blog" (without the quotes)
