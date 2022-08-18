@@ -25,7 +25,7 @@ Kick off your project with this blog boilerplate. This starter ships with the ma
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-prismic-starter/
+    cd my-prismic-starter
     npm run develop
     ```
 
@@ -55,17 +55,18 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 │   ├── colors.css.ts
 │   ├── styles.css.ts
 │   └── theme.css.ts
-└── .env.EXAMPLE
+└── .env.example
 ```
 
 1. **`gatsby-config.js`**: [Gatsby config][] file that includes plugins required for this starter.
 2. **`gatsby-node.js`**: [Gatsby Node][] config file that creates an abstract data model for the homepage content.
 3. **`src/`**: The source directory for the starter, including templates, components, and more.
+4. **`.env.example`**: The sample .env file.
 
 
 ## Getting Started:
 
-1. Create a repository in [Prismic](https://prismic.io/)
+1. Create a repository in [Prismic](https://prismic.io)
 2. Create two custom types: "home_page" (Single type) and post (Repeatable type).
 3. When creating the "home_page" custom type, Select "Single Type" and type in "Home Page" as the name, and it will set the API ID to be "home_page".
 4. When creating the "post" custom type, select "Repeatable Type" and type in "Post" as the name, and it will set the API ID to be "post".
