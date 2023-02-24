@@ -1,5 +1,3 @@
-import { componentResolverFromMap } from "gatsby-plugin-prismic-previews";
-
 import { linkResolver } from "./link-resolver";
 
 import PostTemplate from "../../src/templates/blog-post";
@@ -18,9 +16,9 @@ export const repositoryConfigs = [
   {
     repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
     linkResolver,
-    componentResolver: componentResolverFromMap({
+    componentResolver: {
       homePage: HomePageTemplate,
       post: PostTemplate,
-    }),
+    },
   },
 ];
