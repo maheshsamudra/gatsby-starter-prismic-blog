@@ -16,22 +16,22 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@prismicio/react": "^2.4.4",
-    "gatsby": "^4.20.0",
-    "gatsby-plugin-image": "^2.20.0",
-    "gatsby-plugin-manifest": "^4.20.0",
-    "gatsby-plugin-prismic-previews": "^5.2.8",
-    "gatsby-plugin-sass": "^5.20.0",
-    "gatsby-plugin-sharp": "^4.20.0",
-    "gatsby-plugin-sitemap": "^5.20.0",
-    "gatsby-source-filesystem": "^4.20.0",
-    "gatsby-source-prismic": "^5.2.9",
-    "gatsby-transformer-sharp": "^4.20.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "sass": "^1.54.1"
+    "@prismicio/react": "^2.5.1",
+    "gatsby": "^5.4.1",
+    "gatsby-plugin-image": "^3.4.0",
+    "gatsby-plugin-manifest": "^5.4.0",
+    "gatsby-plugin-prismic-previews": "^6.0.0-alpha.19",
+    "gatsby-plugin-sass": "^6.4.0",
+    "gatsby-plugin-sharp": "^5.4.0",
+    "gatsby-plugin-sitemap": "^6.4.0",
+    "gatsby-source-filesystem": "^5.4.0",
+    "gatsby-source-prismic": "^6.0.0-alpha.19",
+    "gatsby-transformer-sharp": "^5.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.57.1"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.3"
   }
 }

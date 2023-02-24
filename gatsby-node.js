@@ -41,7 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPostsQueryResult = await graphql(
     `
       {
-        allPrismicPost(sort: { order: DESC, fields: data___post_date }) {
+        allPrismicPost(sort: { data: {post_date: DESC }}) {
           nodes {
             id
             uid
