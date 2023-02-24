@@ -17,7 +17,7 @@ Kick off your project with this blog boilerplate. This starter ships with the ma
 
     ```shell
     # create a new Gatsby site using the starter
-    gatsby new my-prismic-starter https://github.com/maheshsamudra/gatsby-starter-prismic-blog
+    npx gatsby new my-prismic-starter https://github.com/maheshsamudra/gatsby-starter-prismic-blog
     ```
 
 2.  **Start developing.**
