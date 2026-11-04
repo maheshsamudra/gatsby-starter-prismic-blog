@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@prismicio/react": "^2.9.0",
-    "gatsby": "^5.13.7",
+    "gatsby": "^5.16.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-prismic-previews": "^5.3.1",
